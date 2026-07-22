@@ -14,7 +14,7 @@ menuButton.addEventListener('click', () => {
 });
 
 navigation.addEventListener('click', (event) => {
-  if (!event.target.matches('a')) return;
+  if (!event.target.closest('a')) return;
   header.classList.remove('menu-open');
   menuButton.setAttribute('aria-expanded', 'false');
   menuButton.setAttribute('aria-label', 'Abrir menú');
@@ -40,6 +40,7 @@ if (reducedMotion || !('IntersectionObserver' in window)) {
 }
 
 const sections = navigationLinks
+  .filter((link) => link.getAttribute('href')?.startsWith('#'))
   .map((link) => document.querySelector(link.getAttribute('href')))
   .filter(Boolean);
 
