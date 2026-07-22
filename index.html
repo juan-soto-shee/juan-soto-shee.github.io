@@ -8,8 +8,8 @@
   <title>MetKinetics | Inteligencia operacional para la industria</title>
   <link rel="icon" href="data:,">
   <link rel="preload" href="assets/industrial-hero.jpg" as="image" fetchpriority="high">
-  <link rel="stylesheet" href="css/corporativo.css?v=20260721-1">
-  <script src="js/corporativo.js?v=20260721-1" defer></script>
+  <link rel="stylesheet" href="css/corporativo.css?v=20260722-2">
+  <script src="js/corporativo.js?v=20260722-2" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -26,6 +26,7 @@
         <a href="#soluciones">Soluciones</a>
         <a href="#integracion">Integración</a>
         <a href="#contacto">Contacto</a>
+        <a class="plantview-access" href="https://metkinetics.cl/MKPV_DASHBOARD/" target="_blank" rel="noopener noreferrer">Ir a PlantView</a>
       </nav>
     </div>
   </header>
@@ -39,8 +40,8 @@
           <h1 id="hero-title">Inteligencia operacional para la industria del&nbsp;futuro</h1>
           <p>Transformamos datos operacionales en información útil para monitorear procesos, analizar el desempeño y apoyar decisiones técnicas con herramientas desarrolladas para la industria.</p>
           <div class="hero-actions">
-            <a class="button primary" href="mailto:contacto@metkinetics.cl">Contactar <span aria-hidden="true">↗</span></a>
-            <a class="button ghost" href="#soluciones">Conocer soluciones <span aria-hidden="true">↓</span></a>
+            <a class="button primary" href="mailto:contacto@metkinetics.cl">Contactar</a>
+            <a class="button ghost" href="#soluciones">Conocer soluciones</a>
           </div>
         </div>
       </div>
@@ -53,7 +54,7 @@
           <div><p class="eyebrow">Soluciones</p><h2 id="solutions-title">Una visión conectada de la operación</h2></div>
           <p>Plataformas diseñadas para convertir la complejidad industrial en información clara, contextual y accionable.</p>
         </div>
-        <div class="solutions-grid">
+        <div class="solutions-grid" data-carousel-track>
           <article class="solution-card reveal">
             <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="m7 14 3-3 2 2 4-5 2 2M9 21h6"/></svg></div>
             <p class="card-number">01 / Plataforma central</p><h3>MK Monitor</h3>
@@ -74,23 +75,76 @@
             <ul><li>Construcción de escenarios</li><li>Simulación dinámica</li><li>Evaluación de alternativas</li><li>Operación real versus simulada</li><li>Apoyo a decisiones de ingeniería</li></ul>
           </article>
         </div>
+        <p class="swipe-hint solutions-swipe-hint">Desliza para explorar las soluciones</p>
       </div>
     </section>
 
     <section class="ecosystem" id="integracion" aria-labelledby="ecosystem-title">
       <div class="container">
-        <h2 class="sr-only" id="ecosystem-title">Ciclo de inteligencia operacional</h2>
+        <div class="ecosystem-intro reveal">
+          <p class="eyebrow">Integración</p>
+          <h2 id="ecosystem-title">Un ciclo que convierte datos en decisiones</h2>
+          <p>Cada herramienta aporta una capa de valor y mantiene la operación conectada con la mejora continua.</p>
+        </div>
         <div class="cycle-image-frame" role="region" aria-label="Diagrama del ciclo de inteligencia operacional. En pantallas pequeñas, deslice horizontalmente para recorrerlo." tabindex="0">
           <picture>
             <source media="(max-width: 760px)" srcset="assets/ciclo-inteligencia-operacional-mobile.png">
             <img class="cycle-image" src="assets/ciclo-inteligencia-operacional.png" alt="Ciclo de inteligencia operacional: datos desde la app, MK Monitor, PlantView Analytics, MKSE y mejora continua." width="1672" height="941" loading="lazy">
           </picture>
         </div>
+        <div class="cycle-mobile" aria-label="Etapas del ciclo de inteligencia operacional">
+          <div class="cycle-track" data-carousel-track tabindex="0">
+            <article class="cycle-card cycle-data">
+              <span class="cycle-number">01</span>
+              <div class="cycle-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h14v16H5zM8 8h8M8 12h5M8 16h7"/></svg></div>
+              <h3>Datos operacionales</h3>
+              <p>Captura información confiable desde terreno y centraliza las variables críticas.</p>
+              <strong>Base para decidir</strong>
+            </article>
+            <article class="cycle-card cycle-monitor">
+              <span class="cycle-number">02</span>
+              <div class="cycle-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="m7 14 3-3 2 2 4-5 2 2M9 21h6"/></svg></div>
+              <h3>MK Monitor</h3>
+              <p>Visualiza el estado de la planta, sus tendencias y alertas en un solo lugar.</p>
+              <strong>Visibilidad en tiempo real</strong>
+            </article>
+            <article class="cycle-card cycle-analytics">
+              <span class="cycle-number">03</span>
+              <div class="cycle-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19V9m5 10V5m5 14v-7m5 7V3"/><path d="m3 14 6-6 5 3 6-7"/></svg></div>
+              <h3>PlantView Analytics</h3>
+              <p>Detecta patrones, anticipa desviaciones y transforma datos en conocimiento.</p>
+              <strong>Decisiones informadas</strong>
+            </article>
+            <article class="cycle-card cycle-simulation">
+              <span class="cycle-number">04</span>
+              <div class="cycle-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 18V6l8-3 8 3v12l-8 3-8-3Z"/><path d="m4 6 8 3 8-3m-8 3v12"/></svg></div>
+              <h3>MKSE</h3>
+              <p>Prueba escenarios antes de actuar y compara alternativas con menor incertidumbre.</p>
+              <strong>Simulación con propósito</strong>
+            </article>
+            <article class="cycle-card cycle-improvement">
+              <span class="cycle-number">05</span>
+              <div class="cycle-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 11a8 8 0 1 0-2.3 5.7M20 4v7h-7"/></svg></div>
+              <h3>Mejora continua</h3>
+              <p>Retroalimenta el proceso con aprendizaje para sostener mejores resultados.</p>
+              <strong>Valor que se renueva</strong>
+            </article>
+          </div>
+          <p class="swipe-hint">Desliza para explorar las etapas</p>
+        </div>
       </div>
     </section>
 
     <section class="contact" id="contacto" aria-label="Contacto">
-      <div class="container contact-inner reveal"><button class="contact-button" type="button" onclick="window.location.href='mailto:contacto@metkinetics.cl'">Contacto</button></div>
+      <div class="container contact-inner reveal">
+        <p class="eyebrow">Próximo paso</p>
+        <h2>Conversemos sobre tu operación</h2>
+        <p>Descubre cómo transformar tus datos en decisiones más claras, oportunas y sostenibles.</p>
+        <div class="contact-actions">
+          <a class="contact-button" href="mailto:contacto@metkinetics.cl">Contactar</a>
+          <a class="contact-secondary" href="https://metkinetics.cl/MKPV_DASHBOARD/" target="_blank" rel="noopener noreferrer">Explorar PlantView</a>
+        </div>
+      </div>
     </section>
   </main>
 
