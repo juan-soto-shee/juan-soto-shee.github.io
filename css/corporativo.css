@@ -370,3 +370,5 @@ p{max-width:68ch;text-wrap:pretty}
 @media(prefers-reduced-motion:reduce){
   .solutions-grid,.cycle-track{scroll-behavior:auto}
 }
+
+.solution-card .simulator-button{width:100%;min-height:44px;margin-top:22px;border-color:var(--simulation);background:var(--simulation);color:#fff}.solution-card .simulator-button:hover{border-color:#8b70d5;background:#8b70d5}
