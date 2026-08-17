@@ -56,3 +56,28 @@ if ('IntersectionObserver' in window) {
   }, { rootMargin: '-25% 0px -60%', threshold: [0, 0.2, 0.5] });
   sections.forEach((section) => sectionObserver.observe(section));
 }
+
+const catalogFilters = [...document.querySelectorAll('[data-filter]')];
+const catalogCards = [...document.querySelectorAll('[data-category]')];
+const resultCount = document.querySelector('[data-result-count]');
+
+catalogFilters.forEach((filterButton) => {
+  filterButton.addEventListener('click', () => {
+    const selectedCategory = filterButton.dataset.filter;
+    let visibleCount = 0;
+
+    catalogFilters.forEach((button) => {
+      const isActive = button === filterButton;
+      button.classList.toggle('active', isActive);
+      button.setAttribute('aria-pressed', String(isActive));
+    });
+
+    catalogCards.forEach((card) => {
+      const isVisible = selectedCategory === 'all' || card.dataset.category === selectedCategory;
+      card.hidden = !isVisible;
+      if (isVisible) visibleCount += 1;
+    });
+
+    if (resultCount) resultCount.textContent = String(visibleCount);
+  });
+});

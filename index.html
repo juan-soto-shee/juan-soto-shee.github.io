@@ -23,7 +23,7 @@
       </button>
       <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
         <a href="#inicio">Inicio</a>
-        <a href="#soluciones">Soluciones</a>
+        <a href="#soluciones">Desarrollos</a>
         <a href="#integracion">Integración</a>
         <a href="#contacto">Contacto</a>
         <a class="plantview-access" href="https://metkinetics.cl/MKPV_DASHBOARD/" target="_blank" rel="noopener noreferrer">Ir a PlantView</a>
@@ -49,35 +49,65 @@
       <a class="scroll-cue" href="#soluciones" aria-label="Ir a soluciones"><span></span>Explorar</a>
     </section>
 
-    <section class="section solutions" id="soluciones" aria-labelledby="solutions-title">
+    <section class="section solutions portfolio" id="soluciones" aria-labelledby="solutions-title">
       <div class="container">
         <div class="section-heading reveal">
-          <div><p class="eyebrow">Soluciones</p><h2 id="solutions-title">Una visión conectada de la operación</h2></div>
-          <p>Plataformas diseñadas para convertir la complejidad industrial en información clara, contextual y accionable.</p>
+          <div><p class="eyebrow">Desarrollos MetKinetics</p><h2 id="solutions-title">Tecnología aplicada a desafíos reales</h2></div>
+          <p>Explora nuestras plataformas de monitoreo, simulación, ingeniería y gestión. Nuevos desarrollos se incorporan continuamente al ecosistema.</p>
         </div>
-        <div class="solutions-grid" data-carousel-track>
-          <article class="solution-card reveal">
-            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="m7 14 3-3 2 2 4-5 2 2M9 21h6"/></svg></div>
-            <p class="card-number">01 / Plataforma central</p><h3>MK Monitor</h3>
+        <div class="catalog-toolbar reveal" aria-label="Filtrar desarrollos">
+          <button class="catalog-filter active" type="button" data-filter="all" aria-pressed="true">Todos</button>
+          <button class="catalog-filter" type="button" data-filter="monitoreo" aria-pressed="false">Monitoreo</button>
+          <button class="catalog-filter" type="button" data-filter="simulacion" aria-pressed="false">Simulación</button>
+          <button class="catalog-filter" type="button" data-filter="ingenieria" aria-pressed="false">Ingeniería y seguridad</button>
+          <button class="catalog-filter" type="button" data-filter="gestion" aria-pressed="false">Gestión</button>
+        </div>
+        <p class="catalog-count" aria-live="polite"><strong data-result-count>6</strong> desarrollos disponibles</p>
+        <div class="solutions-grid catalog-grid" data-catalog>
+          <article class="solution-card product-card reveal" data-category="monitoreo">
+            <div class="product-topline"><span class="product-mark" aria-hidden="true">MM</span><span class="product-status available">Disponible</span></div>
+            <p class="card-number">Monitoreo y analítica</p><h3>MK Monitor</h3>
             <p>Visibilidad continua de la operación para anticipar desviaciones y gestionar múltiples plantas desde un solo entorno.</p>
-            <ul><li>Monitoreo en tiempo real</li><li>Alarmas operacionales</li><li>Indicadores de desempeño</li><li>Históricos y tendencias</li><li>Gestión de múltiples plantas</li><li>Acceso web y móvil</li></ul>
+            <ul><li>Monitoreo en tiempo real</li><li>Alarmas operacionales</li><li>Indicadores e históricos</li></ul>
+            <a class="product-link" href="mailto:contacto@metkinetics.cl?subject=Consulta%20sobre%20MK%20Monitor">Solicitar información <span aria-hidden="true">→</span></a>
           </article>
-          <article class="solution-card premium reveal">
-            <div class="premium-label">Extensión premium de MK Monitor</div>
-            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19V9m5 10V5m5 14v-7m5 7V3"/><path d="m3 14 6-6 5 3 6-7"/></svg></div>
-            <p class="card-number">02 / Analítica avanzada</p><h3>PlantView <span>Analytics</span></h3>
-            <p>Una capa avanzada integrada en MK Monitor para comprender el desempeño y detectar oportunidades de mejora.</p>
-            <ul><li>Analítica operacional</li><li>Comparación de períodos</li><li>Detección de degradación</li><li>Predicción de variables</li><li>Diagnóstico</li><li>Reportes especializados</li></ul>
+          <article class="solution-card product-card reveal" data-category="monitoreo">
+            <div class="product-topline"><span class="product-mark analytics" aria-hidden="true">PV</span><span class="product-status available">Disponible</span></div>
+            <p class="card-number">Analítica avanzada</p><h3>PlantView <span>Analytics</span></h3>
+            <p>Exploración de variables, tendencias y desempeño operacional para convertir datos de planta en decisiones informadas.</p>
+            <ul><li>Analítica operacional</li><li>Comparación de períodos</li><li>Reportes especializados</li></ul>
+            <a class="product-link" href="https://metkinetics.cl/MKPV_DASHBOARD/" target="_blank" rel="noopener noreferrer">Abrir PlantView <span aria-hidden="true">↗</span></a>
           </article>
-          <article class="solution-card reveal">
-            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 18V6l8-3 8 3v12l-8 3-8-3Z"/><path d="m4 6 8 3 8-3m-8 3v12"/></svg></div>
-            <p class="card-number">03 / Simulación de procesos</p><h3>MKSE</h3>
-            <p>Evaluación de escenarios para respaldar decisiones de ingeniería con una lectura dinámica del proceso.</p>
-            <ul><li>Construcción de escenarios</li><li>Simulación dinámica</li><li>Evaluación de alternativas</li><li>Operación real versus simulada</li><li>Apoyo a decisiones de ingeniería</li></ul>
-            <a class="button simulator-button" href="https://metkinetics.cl/MK_ProcessSim/" target="_blank" rel="noopener noreferrer">Abrir simulador de molienda</a>
+          <article class="solution-card product-card reveal" data-category="simulacion">
+            <div class="product-topline"><span class="product-mark simulation" aria-hidden="true">PS</span><span class="product-status demo">Demo pública</span></div>
+            <p class="card-number">Simulación de procesos</p><h3>MK ProcessSim</h3>
+            <p>Simulación dinámica de molienda y clasificación para estudiar escenarios operacionales y respuestas del circuito.</p>
+            <ul><li>Balance dinámico</li><li>Tendencias operacionales</li><li>Evaluación de escenarios</li></ul>
+            <a class="product-link" href="https://metkinetics.cl/MK_ProcessSim/" target="_blank" rel="noopener noreferrer">Abrir simulador <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="solution-card product-card reveal" data-category="ingenieria">
+            <div class="product-topline"><span class="product-mark safety" aria-hidden="true">AE</span><span class="product-status demo">Aplicación web</span></div>
+            <p class="card-number">Ingeniería y seguridad</p><h3>MK AEGIS</h3>
+            <p>Herramienta especializada para diseñar, calcular y documentar sistemas de protección contra caídas.</p>
+            <ul><li>Cálculo de ingeniería</li><li>Gestión de proyectos</li><li>Informes técnicos</li></ul>
+            <a class="product-link" href="https://metkinetics.cl/MK_AEGIS_PORTABLE/" target="_blank" rel="noopener noreferrer">Abrir MK AEGIS <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="solution-card product-card reveal" data-category="ingenieria">
+            <div class="product-topline"><span class="product-mark safety" aria-hidden="true">SL</span><span class="product-status development">En desarrollo</span></div>
+            <p class="card-number">Seguridad operacional</p><h3>MK SafeLine</h3>
+            <p>Gestión digital de inspecciones, condiciones de seguridad y seguimiento de hallazgos en terreno.</p>
+            <ul><li>Inspecciones digitales</li><li>Registro de hallazgos</li><li>Trazabilidad de acciones</li></ul>
+            <a class="product-link" href="mailto:contacto@metkinetics.cl?subject=Consulta%20sobre%20MK%20SafeLine">Conocer el proyecto <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="solution-card product-card reveal" data-category="gestion">
+            <div class="product-topline"><span class="product-mark management" aria-hidden="true">OB</span><span class="product-status development">En desarrollo</span></div>
+            <p class="card-number">Gestión y productividad</p><h3>OrganiBuilder</h3>
+            <p>Construcción y administración visual de estructuras organizacionales para equipos y proyectos.</p>
+            <ul><li>Organigramas interactivos</li><li>Estructuras editables</li><li>Presentación ejecutiva</li></ul>
+            <a class="product-link" href="mailto:contacto@metkinetics.cl?subject=Consulta%20sobre%20OrganiBuilder">Conocer el proyecto <span aria-hidden="true">→</span></a>
           </article>
         </div>
-        <p class="swipe-hint solutions-swipe-hint">Desliza para explorar las soluciones</p>
+        <div class="catalog-cta reveal"><div><strong>¿Buscas una solución específica?</strong><p>También desarrollamos herramientas a medida para desafíos operacionales e ingeniería.</p></div><a class="button primary" href="mailto:contacto@metkinetics.cl?subject=Desarrollo%20de%20una%20solución%20digital">Conversemos</a></div>
       </div>
     </section>
 
