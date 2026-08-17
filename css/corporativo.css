@@ -395,6 +395,8 @@ p{max-width:68ch;text-wrap:pretty}
 .product-mark.monitor-logo-mark{border-color:rgba(32,210,216,.58)}
 .product-mark.grinding-logo-mark{border-color:rgba(255,127,24,.62)}
 .product-mark.aegis-logo-mark{border-color:rgba(50,151,231,.55)}
+.product-mark.plantview-logo-mark{border-color:rgba(151,231,0,.62)}
+.product-mark.organibuilder-logo-mark{border-color:rgba(41,166,255,.62)}
 .product-mark.management{border-color:rgba(88,181,122,.28);background:linear-gradient(145deg,rgba(88,181,122,.2),rgba(88,181,122,.07));color:#69c98b}
 .product-status{padding:6px 9px;border-radius:999px;background:#edf2f5;color:#596b78;font-size:.62rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
 .product-status.available{background:#e7f7ed;color:#277b45}
