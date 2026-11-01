@@ -1,0 +1,49 @@
+name: Publish ProcessSim catalog
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: processsim-site-publish
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out MetKinetics website
+        uses: actions/checkout@v4
+
+      - name: Check out ProcessSim catalog
+        uses: actions/checkout@v4
+        with:
+          repository: juan-soto-shee/MetKinetics-ProcessSim
+          ref: main
+          path: .processsim
+          persist-credentials: false
+
+      - name: Publish catalog files
+        run: |
+          rm -rf simuladores
+          mkdir -p simuladores
+          cp -R .processsim/index.html .processsim/assets .processsim/recursos simuladores/
+          touch simuladores/.nojekyll
+          rm -rf .processsim
+
+      - name: Commit catalog to website
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add simuladores
+          if git diff --cached --quiet; then
+            echo "No catalog changes to publish."
+          else
+            git commit -m "Publish ProcessSim catalog"
+            git push
+          fi
